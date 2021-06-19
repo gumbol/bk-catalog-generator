@@ -2,6 +2,7 @@
   "name": "bk-catalog-generator",
   "version": "0.1.0",
   "private": true,
+  "main": "index.html"
   "scripts": {
   
   }
