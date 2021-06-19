@@ -3,7 +3,6 @@ const http = require("http")
 const fs  = require("fs")
 const url = require ("url")
 const path = require("path")
-const PORT = 80;
 const mimeTypes = {
 	"html" : "text/html",
 	"jpg" : "image/jpeg",
@@ -40,7 +39,7 @@ const mimeTypes = {
 		return
 				
 		
- }).listen(PORT)
+ }).listen(process.env.PORT || 5000)
 
 
 /*
