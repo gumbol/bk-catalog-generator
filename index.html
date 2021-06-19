@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Golden Books | Tarik Alyahya</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- IMPORTANT: fill the content attribute -->
+  <meta name="description"
+    content="An application that generates a catalog for librivox audiobooks using the internet archive apis" />
+  <!-- IMPORTANT: fill the content attribute -->
+  <meta name="keywords" content="audiobooks,internet archive, librivox,free, books" />
+  <!-- IMPORTANT: adjust the relative links as nessecary -->
+      <link rel="stylesheet" type="text/css" href="styles/style.css" />
+	  
+
+    </head>
+    <style>
+      #site-top {
+        margin-bottom: 30px;
+        background: var(--sf-img-6) 0 10% / auto 80% no-repeat;
+        min-height: 9em;
+        border-bottom: 1px solid;
+      }
+      #site-top a {
+        margin-top: -10px;
+      }
+    </style>
+ 
+
+</head>
+
+<body onload="check()">
+	<no-script>
+	Javascript needs to be enabled
+	</no-script>
+     <!--target="_blank" rel="noreferrer noopener"-->
+  
+      <!--main header"-->
+      <header id="site-top">
+        <a href="https://gumbol.github.io/">gumbol.github.io</a>
+      </header>
+  <div id="root">
+  <!--   <div class="container">
+
+    </div>-->
+    
+  </div> 
+ 
+      <script
+      src="scripts/bk-catalog-generator.js"
+      defer
+    ></script> 
+
+
+
+    <footer id="global">
+      <div>
+        <nav class="site-links">
+          Author: <a href="https://gumbol.github.io/about">Tarik Alyahya</a>
+   <!-- add the source code link-->
+          <a
+            class="btn1"
+            href="https://github.com/gumbol/bk-catalog-generator"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Source code</a
+          >
+
+          <a href="https://gumbol.github.io/projects.html"
+            >More projects</a
+          >
+        </nav>
+
+        <nav style="text-align:center" class="out-links">
+          <a
+            href="https://github.com/gumbol"
+            title="Github mascot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img 
+              src="images/github-01-32x.png"
+              alt="GitHub"
+              width="32"
+            />
+          </a>
+        </nav>
+      </div>
+    </footer>
+</body>
+
+</html>

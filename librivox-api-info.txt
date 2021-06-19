@@ -1,0 +1,86 @@
+API Info
+===============
+
+Url to access: https://librivox.org/api/feed/audiobooks
+
+Parameters allowed (current):
+
+id - fetches a single record
+since - takes a UNIX timestamp; returns all projects cataloged since that time
+author - all records by that author last name
+title - all matching titles
+genre - all projects of the matching genre
+extended - =1 will return the full set of data about the project
+Note that the title, author & genre may be searched on with ^ as before, to anchor the beginign of the search term.
+
+Example: https://librivox.org/api/feed/audiobooks/title/^all
+
+Records default to a limit of 50, offset 0. You may also send these:
+
+limit
+offset
+Search may be conducted as:
+
+https://librivox.org/api/feed/audiobooks/?id=52
+
+or
+
+https://librivox.org/api/feed/audiobooks/id/52
+
+Formats:
+
+Default format is xml, but also currently available are json, jsonp, serialized & php array. Csv, MARC records and OPML coming soon.
+
+Example:
+
+https://librivox.org/api/feed/audiobooks/?id=52&format=json
+
+Simple Audiotracks API
+Endpoint: https://librivox.org/api/feed/audiotracks
+
+Parameters:
+
+id - of track itself
+project_id - all tracks for project
+Simple Authors API
+Endpoint: https://librivox.org/api/feed/authors
+
+Parameters:
+
+id - of author
+last_name - exact match
+
+Fields list:
+You can specify a list of fields to return in the following two ways:
+
+&fields={id,title,authors,url_rss}
+
+&fields[]=id&fields[]=title&fields[]=url
+
+This supports sub-groups (authors, translators, sections, genres) but not fields within the subgroups (yet)
+
+List of fields:
+id
+title
+description
+url_text_source
+language
+copyright_year
+num_sections
+url_rss
+url_zip_file
+url_project
+url_librivox
+url_iarchive
+url_other
+totaltime
+totaltimesecs
+authors
+sections
+genres
+translators
+
+how to access librivox json properties
+let url = "http://kayray.org/audiobooks/halfmagic.xml"
+books.authors[0].*
+books.authors[0].*
