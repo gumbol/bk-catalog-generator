@@ -12,7 +12,7 @@ const DATE_IN_SECONDS = Math.round(
 const back1day = DATE_IN_SECONDS - SECONDS_PER_DAY;
 const back7days = DATE_IN_SECONDS - SECONDS_PER_WEEK;
 let catURL = "https://cors-anywhere.herokuapp.com/" + URL_AUDIOBOOKS + "limit=10&extended=1&fields={title,authors,description}&format=json&since=";
-let local = "text/audiobooks10-ext.json";
+let local = "../text/audiobooks10-ext.json";
 let numOfDays = 0;
 
 function check() {
